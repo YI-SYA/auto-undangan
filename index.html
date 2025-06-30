@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Undangan Nikah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📝 Form Generator Undangan</h1>
+
+  <form id="form-undangan">
+    <label>Nama Pasangan:</label>
+    <input type="text" id="nama-pasangan" placeholder="Contoh: Muhyiddin & Aisyah" required>
+
+    <label>Deskripsi Keluarga:</label>
+    <textarea id="desc" placeholder="Putra/Putri dari..."></textarea>
+
+    <label>Tanggal Acara:</label>
+    <input type="date" id="tanggal">
+
+    <label>Lokasi Acara:</label>
+    <input type="text" id="lokasi" placeholder="Contoh: PLTU Palabuhan Ratu">
+
+    <label>Upload Foto Pasangan:</label>
+    <input type="file" id="foto-pasangan" accept="image/*">
+
+    <button type="submit">🔄 Generate Preview</button>
+  </form>
+
+  <hr>
+
+  <h2>📷 Preview Undangan</h2>
+  <div id="preview-undangan">
+    <img id="preview-foto" src="template/pasangan-default.jpg" alt="Foto Pasangan" class="foto">
+    <h2 id="preview-nama">Nama Pasangan</h2>
+    <p id="preview-desc">Deskripsi keluarga</p>
+    <p><strong id="preview-tanggal">Tanggal</strong></p>
+    <p><strong id="preview-lokasi">Lokasi</strong></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
